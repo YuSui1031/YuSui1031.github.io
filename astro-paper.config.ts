@@ -2,14 +2,14 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
-    title: "AstroPaper",
-    description: "A minimal, responsive and SEO-friendly Astro blog theme.",
-    author: "Sat Naing",
-    profile: "https://satna.ing",
+    url: "https://yusui1031.github.io",
+    title: "Yusui's Blog",
+    description: "持续记录技术发展与商业模式",
+    author: "WP",
+    profile: "/avatar.png",
     ogImage: "default-og.jpg",
-    lang: "en",
-    timezone: "Asia/Bangkok",
+    lang: "zh-CN",
+    timezone: "Asia/Shanghai",
     dir: "ltr",
   },
   posts: {
@@ -19,20 +19,20 @@ export default defineAstroPaperConfig({
   },
   features: {
     lightAndDarkMode: true,
-    dynamicOgImage: true,
+    dynamicOgImage: false,
     showArchives: true,
     showBackButton: true,
     editPost: {
       enabled: true,
-      url: "https://github.com/satnaing/astro-paper/edit/main/",
+      url: "https://github.com/yusui1031/yusui1031.github.io/edit/main/",
     },
     search: "pagefind",
   },
   socials: [
-    { name: "github",   url: "https://github.com/satnaing/astro-paper" },
-    { name: "x",        url: "https://x.com/username" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
-    { name: "mail",     url: "mailto:yourmail@gmail.com" },
+    { name: "github",   url: "https://github.com/YuSui1031" },
+    // { name: "x",        url: "https://x.com/username" },
+    // { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
+    { name: "mail",     url: "xiangyuwu@zju.edu.cn" },
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },

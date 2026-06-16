@@ -8,6 +8,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --font-app: var(--font-google-sans-code);
+  /* --font-app: 'Consolas', 'Monaco', 'Courier New', monospace; */
 }
 
 /* Light theme values */

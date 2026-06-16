@@ -29,8 +29,8 @@ export default defineConfig({
     }),
   ],
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ["en", "zh-CN"],
+    defaultLocale: "zh-CN",
     routing: {
       prefixDefaultLocale: false,
     },
@@ -60,13 +60,34 @@ export default defineConfig({
   },
   fonts: [
     {
-      name: "Google Sans Code",
-      cssVariable: "--font-google-sans-code",
-      provider: fontProviders.google(),
+      name: "Consolas",
+      cssVariable: "--font-consolas",
+      provider: fontProviders.local(),
       fallbacks: ["monospace"],
-      weights: [300, 400, 500, 600, 700],
-      styles: ["normal", "italic"],
-      formats: ["woff", "ttf"],
+      options: {
+        variants: [
+          {
+            src: ["./src/assets/fonts/consola.ttf"],
+            weight: 400,
+            style: "normal",
+          },
+          {
+            src: ["./src/assets/fonts/consolab.ttf"],
+            weight: 700,
+            style: "normal",
+          },
+          {
+            src: ["./src/assets/fonts/consolai.ttf"],
+            weight: 400,
+            style: "italic",
+          },
+          {
+            src: ["./src/assets/fonts/consolaz.ttf"],
+            weight: 700,
+            style: "italic",
+          },
+        ],
+      },
     },
   ],
   env: {
