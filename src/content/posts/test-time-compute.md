@@ -58,10 +58,10 @@ TTS 在 Agent 场景下 = **多步 tool-use 轨迹上的 Step 1/2**：
       3. Proxy（概率论来理解随机过程） 与 peak 的对齐度
       4. 简单 adaptive stopping rule（如 PRM plateau + ‖Δh‖ < ε）
    7. 具体实验
-      1. 对 AIME 子集，存在长度 t*(q)，使 pass@1 在 L < t* 上升，L > t* 平台或下降
+      1. 对 AIME 子集，存在长度 t*(q)，使 pass@1在 L < t* 上升，L > t* 平台或下降
          1. 强制 CoT 长度 L ∈ {256, …, 4096}；每题 N=16 路径
          2. 记录：pass@1(L)、token entropy(L)、‖h_{t+1}−h_t‖(L)、路径聚类半径
          3. 成功：显著 peak；proxy 与 t* 相关 ρ > 0.7（可调）
          4. 模型：7B–70B 推理模型
-      2. 同预算 B 下，adaptive stop（entropy / PRM / Δh）相对 fixed max_tokens，pass@1 提升超过预设阈值（如 2%），或同 pass@1 下 latency 显著降低
+      2. 同预算 B 下，adaptive stop（entropy / PRM / Δh）相对 fixed max_tokens，pass@1 提升超过预设阈值（如 2%），或同pass@1下 latency 显著降低
 2. 能否优化现在的投机策略
