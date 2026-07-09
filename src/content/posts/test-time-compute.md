@@ -1,7 +1,7 @@
 ---
 title: "test time compute"
-decription: "TTS、搜索、投机、概率论"
-pbDatetime: 2026-07-06
+description: "TTS、搜索、投机、概率论"
+pubDatetime: 2026-07-06
 tags: ["技术", "幻觉"]
 draft: true
 featured: false
